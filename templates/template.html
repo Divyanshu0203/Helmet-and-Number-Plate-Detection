@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 py-3">
+        <a href="{{ url_for('dashboard') }}" class="navbar-brand p-0">
+            <h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Helmet and Number Plate</h1>
+        </a>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav ms-auto">
+                <a href="{{ url_for('first') }}" class="nav-item nav-link">Home</a>
+                <a href="{{ url_for('logout') }}" class="nav-item nav-link text-danger">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center mt-4">
+        <img src="../static/img/carousel-1.jpg" alt="Helmet Image" class="img-fluid" style="max-height: 150px; margin: 10px;">
+        <img src="../static/img/carousel-2.jpg" alt="Number Plate Image" class="img-fluid" style="max-height: 150px; margin: 10px;">
+    </div>
+
+    <div class="container text-center mt-5">
+        <h1>Welcome, {{ username }}!</h1>
+        <p class="lead">Choose a module below:</p>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-3">
+                <a href="{{ url_for('image') }}" class="btn btn-outline-primary btn-block mb-3 w-100">Image Detection</a>
+                <a href="{{ url_for('video') }}" class="btn btn-outline-primary btn-block mb-3 w-100">Video Detection</a>
+                <a href="{{ url_for('webcam') }}" class="btn btn-outline-primary btn-block mb-3 w-100">Webcam Detection</a>
+                <a href="{{ url_for('performance') }}" class="btn btn-outline-primary btn-block mb-3 w-100">Performance Analysis</a>
+                <a href="{{ url_for('chart') }}" class="btn btn-outline-primary btn-block mb-3 w-100">Detection Chart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

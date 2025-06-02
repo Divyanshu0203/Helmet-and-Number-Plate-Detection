@@ -1,0 +1,8 @@
+train: C:/Users/JP/Desktop/Helmet detection using deep learning/models/data/images/train
+val: C:/Users/JP/Desktop/Helmet detection using deep learning/models/data/images/val
+
+# nc: 9
+# names: ['AKM', 'DANGER_POSE', 'KNIFE', 'M4', 'NOT_DANGER_POSE', 'PKS', 'RPG', 'SNIPER', 'pistol']
+
+nc: 3
+names: ['With Helmet', 'Without Helmet', 'Number Plate']

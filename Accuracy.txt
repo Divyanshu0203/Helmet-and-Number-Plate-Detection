@@ -1,0 +1,9 @@
+Helmet and Number Plate Detection using YOLOv8.
+
+Algorithm / Model Used : YOLOv8 Architecture.
+
+Training accuracy of 88.00%.
+Validation accuracy of 79.00%
+
+
+

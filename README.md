@@ -2,6 +2,8 @@ Hello all,
 
 This is a code you can use to develop and run a Helmet and Number Plate Detection System.
 
+Login credentials are Static :- admin - admin
+
 Requirements :- 
 
 Python Libraries - 
